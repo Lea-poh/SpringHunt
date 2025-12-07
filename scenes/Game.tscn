@@ -486,8 +486,8 @@ script = ExtResource("1_phd0a")
 position = Vector2(397, 433)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(190, -98)
-scale = Vector2(4.39062, 2.58594)
+position = Vector2(191.50006, -96.00003)
+scale = Vector2(4.5195313, 2.7656248)
 texture = ExtResource("3_o1qho")
 
 [node name="Bee" type="CharacterBody2D" parent="."]
