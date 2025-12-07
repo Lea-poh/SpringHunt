@@ -27,10 +27,17 @@ func set_results(score):
 
 
 func _on_secret_pressed():
-	$Control/ScoreLabel.visible = false
-	$Control/SecretButton.visible = false
-	texrect.texture = load("res://assets/secret.png")
-	$Control/RestartButton.visible = true
+	_button_pressed()
 
 func _on_restart_pressed():
-	restart.emit()
+	_button_pressed()
+	
+func _button_pressed():
+	if $Control/SecretButton.visible:
+		$Control/ScoreLabel.visible = false
+		$Control/SecretButton.visible = false
+		texrect.texture = load("res://assets/secret.png")
+		$Control/RestartButton.visible = true
+	else:
+		restart.emit()
+	
