@@ -22,9 +22,11 @@ func _process(delta):
 
 func _on_area_2d_body_entered(body):
 	if body.name == "Bee":
+		$AudioStreamPlayer.play()
 		# ✅ Find the Game node safely
 		var game = get_tree().get_first_node_in_group("Game")
 		if game:
 			game.add_flower()
 
+		await $AudioStreamPlayer.finished
 		queue_free()
