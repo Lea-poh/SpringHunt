@@ -1,7 +1,8 @@
-[gd_scene load_steps=15 format=4 uid="uid://cifk2ikqqtxg2"]
+[gd_scene load_steps=16 format=4 uid="uid://cifk2ikqqtxg2"]
 
 [ext_resource type="Script" uid="uid://da2bo1tlq33a7" path="res://scenes/Game.gd" id="1_phd0a"]
 [ext_resource type="Texture2D" uid="uid://brm3b8t8dj0sk" path="res://assets/meadow.png" id="2_400sg"]
+[ext_resource type="PackedScene" uid="uid://cki62nql875rb" path="res://scenes/VirtualJoystick.tscn" id="2_qy1jj"]
 [ext_resource type="Texture2D" uid="uid://vpfr1cny5op2" path="res://assets/bee_a.png" id="5_2ohkg"]
 [ext_resource type="Script" uid="uid://c8wr1clpj7v55" path="res://scenes/Bee.gd" id="5_3vvtf"]
 [ext_resource type="Texture2D" uid="uid://bl2347mkifodj" path="res://assets/bee_b.png" id="6_gpla7"]
@@ -481,6 +482,13 @@ tile_proxies/coords_level = [[3, Vector2i(0, 0)], [171, Vector2i(0, 0)], [4, Vec
 position = Vector2(381, 433)
 script = ExtResource("1_phd0a")
 
+[node name="VirtualJoystick" parent="." instance=ExtResource("2_qy1jj")]
+z_index = 100
+offset_left = 565.0
+offset_top = 96.0
+offset_right = 668.0
+offset_bottom = 184.0
+
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
@@ -509,7 +517,7 @@ theme_override_font_sizes/font_size = 32
 position = Vector2(381, 433)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(185.84787, -92.147896)
+position = Vector2(198.99997, -77.00001)
 scale = Vector2(0.43163484, 0.48385528)
 texture = ExtResource("2_400sg")
 
@@ -538,7 +546,7 @@ animation = &"rest"
 position = Vector2(141, -50)
 
 [node name="Flower2" parent="." instance=ExtResource("9_vmqsw")]
-position = Vector2(622, 155)
+position = Vector2(552, 139)
 
 [node name="Flower3" parent="." instance=ExtResource("9_vmqsw")]
 position = Vector2(654, -77)
