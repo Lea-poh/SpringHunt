@@ -6,6 +6,13 @@
 [node name="EndScreen" type="Node2D"]
 script = ExtResource("1_mo2es")
 
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 768.0
+texture = ExtResource("2_irkl0")
+expand_mode = 5
+stretch_mode = 5
+
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
@@ -23,12 +30,11 @@ offset_right = 77.0
 offset_bottom = 16.0
 
 [node name="SecretButton" type="Button" parent="Control"]
-visible = false
 layout_mode = 0
-offset_left = -149.0
-offset_top = 295.0
-offset_right = 101.0
-offset_bottom = 375.0
+offset_left = -138.0
+offset_top = 306.0
+offset_right = 112.0
+offset_bottom = 386.0
 
 [node name="RestartButton" type="Button" parent="Control"]
 visible = false
@@ -38,11 +44,6 @@ offset_top = 303.0
 offset_right = 81.0
 offset_bottom = 360.0
 text = "Restart"
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(591, 338)
-scale = Vector2(0.88037366, 0.7874248)
-texture = ExtResource("2_irkl0")
 
 [connection signal="pressed" from="Control/SecretButton" to="." method="_on_secret_pressed"]
 [connection signal="pressed" from="Control/RestartButton" to="." method="_on_restart_pressed"]
