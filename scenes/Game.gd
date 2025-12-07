@@ -11,6 +11,9 @@ var total_flowers = 0
 var can_move = false
 
 func _ready():
+	modulate.a = 0
+	var tween = create_tween()
+	tween.tween_property(self, "modulate:a", 1.0, 0.6)
 	start_game()
 
 func start_game():
