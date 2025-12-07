@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bw437naqug2sj"]
 
-[ext_resource type="Script" path="res://scenes/Flower.gd" id="1_p0ja2"]
-[ext_resource type="Texture2D" uid="uid://e1pjpiyebmdl" path="res://assets/character_green_climb_a.png" id="2_owdw5"]
+[ext_resource type="Script" uid="uid://b0lyw0k5b4nvv" path="res://scenes/Flower.gd" id="1_p0ja2"]
+[ext_resource type="Texture2D" uid="uid://c7885b13ty60e" path="res://assets/flowers/Asset 1.png" id="2_sae6b"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pdn8b"]
 radius = 22.0
@@ -11,12 +11,12 @@ height = 54.0
 position = Vector2(74, -153)
 script = ExtResource("1_p0ja2")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(1, -7)
-scale = Vector2(0.492188, 0.492188)
-texture = ExtResource("2_owdw5")
-
 [node name="Area2D" type="Area2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+position = Vector2(-2, -1)
+scale = Vector2(0.17500396, 0.17500398)
+texture = ExtResource("2_sae6b")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(1, 0)
