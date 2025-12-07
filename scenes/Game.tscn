@@ -530,7 +530,7 @@ shape = SubResource("CapsuleShape2D_u3n6l")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Bee"]
 position = Vector2(-3, 2)
 sprite_frames = SubResource("SpriteFrames_ac1wl")
-animation = &"fly"
+animation = &"rest"
 
 [node name="Flower" parent="." instance=ExtResource("9_vmqsw")]
 position = Vector2(141, -50)

@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed = 250
+@export var speed = 400
 @onready var anim_sprite = $AnimatedSprite2D
 
 func _physics_process(delta):
@@ -11,7 +11,8 @@ func _physics_process(delta):
 	
 	if get_parent().can_move:
 		# Move the bee
-		velocity = input * speed
+		var desired_velocity = input * speed
+		velocity = 0.05*(desired_velocity - velocity) + velocity
 		move_and_slide()
 
 		# Play fly animation if moving, rest if not
