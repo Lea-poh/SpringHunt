@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bengfbtjgpiwn"]
+[gd_scene load_steps=3 format=3 uid="uid://bengfbtjgpiwn"]
 
 [ext_resource type="Script" uid="uid://bp42qjnuvtl05" path="res://EndScreen.gd" id="1_mo2es"]
+[ext_resource type="Texture2D" uid="uid://ybobwf45gmfw" path="res://assets/you_win.png" id="2_irkl0"]
 
 [node name="EndScreen" type="Node2D"]
 script = ExtResource("1_mo2es")
@@ -38,12 +39,11 @@ text = "You get a secret:
 There is another Taylor baby on the way."
 
 [node name="SecretButton" type="Button" parent="Control"]
-visible = false
 layout_mode = 0
-offset_left = 11.0
-offset_top = 23.0
-offset_right = 19.0
-offset_bottom = 31.0
+offset_left = -149.0
+offset_top = 295.0
+offset_right = 101.0
+offset_bottom = 375.0
 text = "Claim Win"
 
 [node name="RestartButton" type="Button" parent="Control"]
@@ -54,6 +54,11 @@ offset_top = 23.0
 offset_right = 19.0
 offset_bottom = 31.0
 text = "Restart"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(560, 376)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("2_irkl0")
 
 [connection signal="pressed" from="Control/SecretButton" to="." method="_on_secret_pressed"]
 [connection signal="pressed" from="Control/RestartButton" to="." method="_on_restart_pressed"]
