@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://cifk2ikqqtxg2"]
+[gd_scene load_steps=15 format=4 uid="uid://cifk2ikqqtxg2"]
 
 [ext_resource type="Script" uid="uid://da2bo1tlq33a7" path="res://scenes/Game.gd" id="1_phd0a"]
 [ext_resource type="Texture2D" uid="uid://bypr2os5fvcsm" path="res://assets/background_solid_grass.png" id="3_o1qho"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bl2347mkifodj" path="res://assets/bee_b.png" id="6_gpla7"]
 [ext_resource type="Texture2D" uid="uid://daar3nv80jax0" path="res://assets/bee_rest.png" id="7_vf6cu"]
 [ext_resource type="Texture2D" uid="uid://bxxmaprao7ef8" path="res://assets/terrain.png" id="8_400sg"]
+[ext_resource type="AudioStream" uid="uid://c8pbiv8xj6bkr" path="res://assets/Rimsky-Korsakov - Flight of the Bumblebee.mp3" id="9_g4kob"]
 [ext_resource type="PackedScene" uid="uid://bw437naqug2sj" path="res://scenes/Flower.tscn" id="9_vmqsw"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qc1es"]
@@ -564,5 +565,10 @@ one_shot = true
 position = Vector2(6, 0)
 tile_map_data = PackedByteArray("AAAMAPn/rAAaAAEAAAAMAPr/rAAaAAEAAAAMAPj/rAAJAAEAAAAMAPv/rAAaAAEAAAAMAPz/rAAaAAEAAAAMAP3/rAAaAAEAAAAMAP7/rAAaAAEAAAAMAP//rAAaAAEAAAAMAAAArAAEAAEAAAAMAAEArAAaAAEAAAAMAAIArAAaAAEAAAAMAAMArAAaAAEAAAAMAAQArAAaAAEAAAD5/wMArAAaAAEAAAD5/wIArAAaAAEAAAD5/wEArAAaAAEAAAD5/wAArAAaAAEAAAD5////rAAaAAEAAAD5//7/rAAaAAEAAAD5//3/rAAaAAEAAAD5//z/rAAaAAEAAAD5//v/rAAaAAEAAAD5//r/rAAaAAEAAAD5//n/rAAaAAEAAAD5//j/rAAIAAEAAAD6//j/rAAQAAEAAAD7//j/rAAQAAEAAAD8//j/rAAQAAEAAAD9//j/rAAQAAEAAAD+//j/rAAQAAEAAAD///j/rAAQAAEAAAAAAPj/rAAQAAEAAAABAPj/rAAQAAEAAAACAPj/rAAQAAEAAAADAPj/rAAQAAEAAAAEAPj/rAAQAAEAAAAFAPj/rAAQAAEAAAAGAPj/rAAQAAEAAAAHAPj/rAAQAAEAAAAIAPj/rAAQAAEAAAAJAPj/rAAQAAEAAAAKAPj/rAAQAAEAAAALAPj/rAAQAAEAAAALAAAArAAQAAEAAAAKAAAArAAQAAEAAAAJAAAArAAQAAEAAAAIAAAArAAQAAEAAAAHAAAArAAQAAEAAAAGAAAArAAPAAEAAAD6//z/rAAQAAEAAAD7//z/rAAQAAEAAAD8//z/rAAQAAEAAAD9//z/rAAQAAEAAAD+//z/rAAQAAEAAAD///z/rAATAAEAAAAEAPn/rAAaAAEAAAAEAPr/rAAaAAEAAAAEAPv/rAAaAAEAAAAEAPz/rAAaAAEAAAAEAP3/rAACAAEAAAAFAP3/rAAQAAEAAAAGAP3/rAAQAAEAAAAHAP3/rAAQAAEAAAAIAP3/rAADAAEAAAAIAPz/rAAaAAEAAAAIAPv/rAAbAAEAAAD+/wIArAAaAAEAAAD+/wMArAAZAAEAAAD+/wEArAAbAAEAAAD5/wUArAACAAEAAAD6/wUArAAQAAEAAAD7/wUArAAQAAEAAAD8/wUArAAQAAEAAAD9/wUArAAQAAEAAAD+/wUArAAQAAEAAAD//wUArAAQAAEAAAAAAAUArAAQAAEAAAABAAUArAAQAAEAAAACAAUArAAQAAEAAAADAAUArAAQAAEAAAAEAAUArAAQAAEAAAAFAAUArAAQAAEAAAAGAAUArAAQAAEAAAAHAAUArAAQAAEAAAAIAAUArAAQAAEAAAAJAAUArAAQAAEAAAAKAAUArAAQAAEAAAALAAUArAAQAAEAAAAMAAUArAADAAEAAAD5/wQArAAaAAEAAAA=")
 tile_set = SubResource("TileSet_qy1jj")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_g4kob")
+autoplay = true
+parameters/looping = false
 
 [connection signal="timeout" from="GameTimer" to="." method="_on_game_timer_timeout"]
