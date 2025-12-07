@@ -509,9 +509,8 @@ theme_override_font_sizes/font_size = 32
 position = Vector2(381, 433)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-
-position = Vector2(185.84787, -98.64784)
-scale = Vector2(0.43163484, 0.4762796)
+position = Vector2(185.84787, -92.147896)
+scale = Vector2(0.43163484, 0.48385528)
 texture = ExtResource("2_400sg")
 
 [node name="Bee" type="CharacterBody2D" parent="."]
