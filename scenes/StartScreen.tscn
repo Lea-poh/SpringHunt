@@ -6,6 +6,13 @@
 [node name="StartScreen" type="Node2D"]
 script = ExtResource("1_t583d")
 
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 768.0
+texture = ExtResource("2_pswtb")
+expand_mode = 3
+stretch_mode = 5
+
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
@@ -13,11 +20,12 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Button" type="Button" parent="Control"]
+z_index = -1
 layout_mode = 0
-offset_left = 369.0
-offset_top = 533.0
-offset_right = 719.0
-offset_bottom = 633.0
+offset_left = 366.0
+offset_top = 594.0
+offset_right = 716.0
+offset_bottom = 694.0
 
 [node name="Label" type="Label" parent="Control"]
 visible = false
@@ -34,10 +42,5 @@ offset_bottom = 3.2000122
 text = "Welcome!
 You job is to visit as many flowes as possible in 60s!
 Get at least 5 flowers to win!"
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(575.00006, 325.00003)
-scale = Vector2(0.75, 0.75)
-texture = ExtResource("2_pswtb")
 
 [connection signal="pressed" from="Control/Button" to="." method="_on_button_pressed"]
