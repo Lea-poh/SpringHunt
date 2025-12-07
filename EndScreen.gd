@@ -18,10 +18,12 @@ signal restart
 func set_results(score):
 	if score > 5:
 		texrect.texture = load("res://assets/you_win_changed.png")
+		$Control/RestartButton.visible = false
 		$Control/SecretButton.visible = true
 	else:
 		texrect.texture = load("res://assets/you_lose.png")
 		$Control/RestartButton.visible = true
+		$Control/SecretButton.visible = false
 
 
 func _on_secret_pressed():
