@@ -495,7 +495,7 @@ offset_bottom = 40.0
 
 [node name="FlowerCounter" type="Label" parent="Control/VBoxContainer"]
 layout_mode = 2
-text = "🌼 0"
+text = "🌼  0"
 
 [node name="TimerLabel" type="Label" parent="Control/VBoxContainer"]
 layout_mode = 2
