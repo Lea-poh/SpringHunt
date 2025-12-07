@@ -43,9 +43,4 @@ text = "Welcome!
 You job is to visit as many flowes as possible in 60s!
 Get at least 5 flowers to win!"
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(583, 326)
-scale = Vector2(0.7197265, 0.71972656)
-texture = ExtResource("2_pswtb")
-
 [connection signal="pressed" from="Control/Button" to="." method="_on_button_pressed"]
