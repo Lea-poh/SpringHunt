@@ -1,5 +1,6 @@
 extends Node2D
 
+@onready var sprite = $Sprite2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -15,21 +16,20 @@ func _process(delta):
 signal restart
 
 func set_results(score):
-	$Control/ScoreLabel.text = "Flowers: " + str(score)
-
+	# $Control/ScoreLabel.text = "Flowers: " + str(score)
 	if score > 5:
-		$Control/ResultLabel.text = "YOU WIN! 🏆 Here is your reward!"
+		sprite.texture = load("res://assets/you_win_changed.png")
 		$Control/SecretButton.visible = true
 	else:
-		$Control/ResultLabel.text = "YOU LOSE 💀"
+		sprite.texture = load("res://assets/you_lose.png")
 		$Control/RestartButton.visible = true
 
 
 func _on_secret_pressed():
-	$Control/ResultLabel.visible = false
 	$Control/ScoreLabel.visible = false
 	$Control/SecretButton.visible = false
-	$Control/SecretLabel.visible = true
+	sprite.texture = load("res://assets/secret.png")
+	$Control/RestartButton.visible = true
 
 func _on_restart_pressed():
 	restart.emit()

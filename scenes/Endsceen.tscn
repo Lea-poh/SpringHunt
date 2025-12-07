@@ -14,50 +14,34 @@ offset_top = 275.0
 offset_right = 625.0
 offset_bottom = 315.0
 
-[node name="ResultLabel" type="Label" parent="Control"]
-layout_mode = 0
-offset_left = 31.0
-offset_top = -43.0
-offset_right = 73.0
-offset_bottom = -20.0
-
 [node name="ScoreLabel" type="Label" parent="Control"]
+visible = false
 layout_mode = 0
 offset_left = 30.0
 offset_top = -7.0
 offset_right = 77.0
 offset_bottom = 16.0
 
-[node name="SecretLabel" type="Label" parent="Control"]
-visible = false
-layout_mode = 0
-offset_left = -72.0
-offset_top = -5.0
-offset_right = 243.0
-offset_bottom = 18.0
-text = "You get a secret:
-There is another Taylor baby on the way."
-
 [node name="SecretButton" type="Button" parent="Control"]
+visible = false
 layout_mode = 0
 offset_left = -149.0
 offset_top = 295.0
 offset_right = 101.0
 offset_bottom = 375.0
-text = "Claim Win"
 
 [node name="RestartButton" type="Button" parent="Control"]
 visible = false
 layout_mode = 0
-offset_left = 11.0
-offset_top = 23.0
-offset_right = 19.0
-offset_bottom = 31.0
+offset_left = -137.0
+offset_top = 303.0
+offset_right = 81.0
+offset_bottom = 360.0
 text = "Restart"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(560, 376)
-scale = Vector2(0.9, 0.9)
+position = Vector2(591, 338)
+scale = Vector2(0.88037366, 0.7874248)
 texture = ExtResource("2_irkl0")
 
 [connection signal="pressed" from="Control/SecretButton" to="." method="_on_secret_pressed"]
