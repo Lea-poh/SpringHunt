@@ -1,7 +1,7 @@
 [gd_scene load_steps=15 format=4 uid="uid://cifk2ikqqtxg2"]
 
 [ext_resource type="Script" uid="uid://da2bo1tlq33a7" path="res://scenes/Game.gd" id="1_phd0a"]
-[ext_resource type="Texture2D" uid="uid://bypr2os5fvcsm" path="res://assets/background_solid_grass.png" id="3_o1qho"]
+[ext_resource type="Texture2D" uid="uid://brm3b8t8dj0sk" path="res://assets/meadow.png" id="2_400sg"]
 [ext_resource type="Texture2D" uid="uid://vpfr1cny5op2" path="res://assets/bee_a.png" id="5_2ohkg"]
 [ext_resource type="Script" uid="uid://c8wr1clpj7v55" path="res://scenes/Bee.gd" id="5_3vvtf"]
 [ext_resource type="Texture2D" uid="uid://bl2347mkifodj" path="res://assets/bee_b.png" id="6_gpla7"]
@@ -509,9 +509,10 @@ theme_override_font_sizes/font_size = 32
 position = Vector2(381, 433)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(185.74998, -68.49994)
-scale = Vector2(4.6972656, 3.074219)
-texture = ExtResource("3_o1qho")
+
+position = Vector2(185.84787, -98.64784)
+scale = Vector2(0.43163484, 0.4762796)
+texture = ExtResource("2_400sg")
 
 [node name="Bee" type="CharacterBody2D" parent="."]
 position = Vector2(-67, 0)
