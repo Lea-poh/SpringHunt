@@ -495,10 +495,12 @@ offset_bottom = 40.0
 
 [node name="FlowerCounter" type="Label" parent="Control/VBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
 text = "🌼  0"
 
 [node name="TimerLabel" type="Label" parent="Control/VBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -552,7 +554,7 @@ position = Vector2(228, 150)
 position = Vector2(410, -262)
 
 [node name="Flower8" parent="." instance=ExtResource("9_vmqsw")]
-position = Vector2(-252, -320)
+position = Vector2(-128, -331)
 
 [node name="GameTimer" type="Timer" parent="."]
 wait_time = 20.0
