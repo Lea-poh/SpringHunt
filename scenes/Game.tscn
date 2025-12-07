@@ -497,7 +497,7 @@ offset_bottom = 40.0
 [node name="FlowerCounter" type="Label" parent="Control/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
-text = "🌼  0"
+text = "Flowers:  0"
 
 [node name="TimerLabel" type="Label" parent="Control/VBoxContainer"]
 layout_mode = 2
