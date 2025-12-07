@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8ule32bsbox8"]
+
+[ext_resource type="Script" path="res://scenes/StartScreen.gd" id="1_t583d"]
+
+[node name="StartScreen" type="Node2D"]
+script = ExtResource("1_t583d")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 518.0
+offset_top = 386.0
+offset_right = 611.0
+offset_bottom = 417.0
+text = "Start game"
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 9.852
+anchor_top = 5.485
+anchor_right = 18.606
+anchor_bottom = 8.82
+offset_left = -2.08001
+offset_top = 43.6
+offset_right = 43.76
+offset_bottom = -14.8
+text = "Welcome!
+You job is to visit as many flowes as possible in 60s!
+Get at least 5 flowers to win!"
+
+[connection signal="pressed" from="Control/Button" to="." method="_on_button_pressed"]
