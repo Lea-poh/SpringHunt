@@ -26,8 +26,8 @@ func start_game():
 	timer.start()
 
 func _process(delta):
-	timer_label.text = "Timer: " + str(int(timer.time_left))
-	score_label.text = "Flowers: : " + str(flowers_collected)
+	timer_label.text = str(int(timer.time_left)) + " sec"
+	score_label.text = str(flowers_collected)
 
 func add_flower():
 	flowers_collected += 1
