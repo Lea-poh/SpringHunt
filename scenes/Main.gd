@@ -6,7 +6,11 @@ extends Node
 
 var current_scene
 
+func _on_resize():
+	get_viewport().size = get_window().size
+
 func _ready():
+	get_tree().root.size_changed.connect(_on_resize)
 	show_start()
 
 func show_start():
