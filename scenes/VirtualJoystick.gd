@@ -8,14 +8,15 @@ extends Control
 var joystick_vector := Vector2.ZERO
 var touching := false
 
+func is_real_mobile() -> bool:
+	return OS.get_name() == "Android" or OS.get_name() == "iOS"
+
 func _ready():
-	# ✅ Only show joystick on mobile
-	if DisplayServer.is_touchscreen_available():
+	if is_real_mobile():
 		show()
 	else:
 		hide()
 	reset_knob()
-
 
 func _input(event):
 	if event is InputEventScreenTouch:
