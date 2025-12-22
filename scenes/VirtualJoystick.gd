@@ -1,24 +1,26 @@
 extends Control
 
 @export var max_distance := 60.0
-
 @onready var base = $Base
 @onready var knob = $Knob
 
 var joystick_vector := Vector2.ZERO
 var touching := false
-
-func is_real_mobile() -> bool:
-	return OS.get_name() == "Android" or OS.get_name() == "iOS"
+var activated := false   # <-- NEW
 
 func _ready():
-	if is_real_mobile():
-		show()
-	else:
-		hide()
+	hide()
 	reset_knob()
 
 func _input(event):
+	# ✅ First touch = mobile detected
+	if event is InputEventScreenTouch and not activated:
+		activated = true
+		show()
+
+	if not activated:
+		return
+
 	if event is InputEventScreenTouch:
 		if event.pressed:
 			if base.get_global_rect().has_point(event.position):
