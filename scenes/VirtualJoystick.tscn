@@ -15,17 +15,18 @@ script = ExtResource("1_fbeeo")
 visible = false
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_top = 1.0
+offset_right = 204.0
+offset_bottom = 205.0
 mouse_filter = 2
 texture = ExtResource("2_v5vy8")
 
 [node name="Knob" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(35, 35)
 layout_mode = 0
-offset_left = 62.0
-offset_top = 62.0
-offset_right = 138.0
-offset_bottom = 138.0
+offset_left = 66.0
+offset_top = 64.0
+offset_right = 142.0
+offset_bottom = 140.0
 mouse_filter = 2
 texture = ExtResource("3_v5vy8")
