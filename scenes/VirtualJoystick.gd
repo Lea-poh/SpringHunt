@@ -10,10 +10,10 @@ var touching := false
 
 func _ready():
 	# ✅ Only show joystick on mobile
-	if not OS.has_feature("mobile"):
-		hide()
+	if DisplayServer.is_touchscreen_available():
+		show()
 	else:
-		show()	
+		hide()
 	reset_knob()
 
 

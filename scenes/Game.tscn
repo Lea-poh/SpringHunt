@@ -487,10 +487,10 @@ script = ExtResource("1_phd0a")
 
 [node name="VirtualJoystick" parent="." instance=ExtResource("2_qy1jj")]
 z_index = 100
-offset_left = 596.0
-offset_top = 142.0
-offset_right = 699.0
-offset_bottom = 230.0
+offset_left = 566.0
+offset_top = 128.0
+offset_right = 772.0
+offset_bottom = 332.0
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
