@@ -1,11 +1,11 @@
 [gd_scene load_steps=19 format=4 uid="uid://cifk2ikqqtxg2"]
 
 [ext_resource type="Script" uid="uid://da2bo1tlq33a7" path="res://scenes/Game.gd" id="1_phd0a"]
-[ext_resource type="Texture2D" uid="uid://brm3b8t8dj0sk" path="res://assets/meadow.png" id="2_400sg"]
 [ext_resource type="PackedScene" uid="uid://cki62nql875rb" path="res://scenes/VirtualJoystick.tscn" id="2_qy1jj"]
 [ext_resource type="Texture2D" uid="uid://cpstqerrnhy4r" path="res://assets/flower_counter.png" id="3_mcffj"]
 [ext_resource type="Texture2D" uid="uid://8oq2uycbk7yw" path="res://assets/timer.png" id="4_2rd6h"]
 [ext_resource type="Texture2D" uid="uid://vpfr1cny5op2" path="res://assets/bee_a.png" id="5_2ohkg"]
+[ext_resource type="Texture2D" uid="uid://g76bgp7qtugt" path="res://assets/meadow.jpg" id="5_2rd6h"]
 [ext_resource type="Script" uid="uid://c8wr1clpj7v55" path="res://scenes/Bee.gd" id="5_3vvtf"]
 [ext_resource type="Texture2D" uid="uid://bl2347mkifodj" path="res://assets/bee_b.png" id="6_gpla7"]
 [ext_resource type="Texture2D" uid="uid://daar3nv80jax0" path="res://assets/bee_rest.png" id="7_vf6cu"]
@@ -542,7 +542,7 @@ position = Vector2(381, 433)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2(198.99997, -77.00001)
 scale = Vector2(0.43163484, 0.48385528)
-texture = ExtResource("2_400sg")
+texture = ExtResource("5_2rd6h")
 
 [node name="Bee" type="CharacterBody2D" parent="."]
 z_index = 14

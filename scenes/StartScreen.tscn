@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c8ule32bsbox8"]
 
 [ext_resource type="Script" uid="uid://cwynnme0wijnj" path="res://scenes/StartScreen.gd" id="1_t583d"]
-[ext_resource type="Texture2D" uid="uid://c8bcafs66f0wi" path="res://assets/StartScreen.png" id="2_pswtb"]
+[ext_resource type="Texture2D" uid="uid://b7ew0bhvh86ub" path="res://assets/StartScreen.jpg" id="2_pswtb"]
 
 [node name="StartScreen" type="Node2D"]
 script = ExtResource("1_t583d")

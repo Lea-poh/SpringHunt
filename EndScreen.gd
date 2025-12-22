@@ -10,18 +10,18 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	pass
 
 signal restart
 
 func set_results(score):
 	if score > 5:
-		texrect.texture = load("res://assets/you_win_changed.png")
+		texrect.texture = load("res://assets/you_win_changed.jpg")
 		$Control/RestartButton.visible = false
 		$Control/SecretButton.visible = true
 	else:
-		texrect.texture = load("res://assets/you_lose.png")
+		texrect.texture = load("res://assets/you_lose.jpg")
 		$Control/RestartButton.visible = true
 		$Control/SecretButton.visible = false
 
@@ -36,7 +36,7 @@ func _button_pressed():
 	if $Control/SecretButton.visible:
 		$Control/ScoreLabel.visible = false
 		$Control/SecretButton.visible = false
-		texrect.texture = load("res://assets/secret.png")
+		texrect.texture = load("res://assets/secret.jpg")
 		$Control/RestartButton.visible = true
 	else:
 		restart.emit()

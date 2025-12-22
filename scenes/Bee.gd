@@ -3,7 +3,7 @@ extends CharacterBody2D
 @export var speed = 400
 @onready var anim_sprite = $AnimatedSprite2D
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var input := Vector2.ZERO
 
 	# ✅ Keyboard input
