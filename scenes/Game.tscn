@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://cifk2ikqqtxg2"]
+[gd_scene load_steps=19 format=4 uid="uid://cifk2ikqqtxg2"]
 
 [ext_resource type="Script" uid="uid://da2bo1tlq33a7" path="res://scenes/Game.gd" id="1_phd0a"]
 [ext_resource type="Texture2D" uid="uid://brm3b8t8dj0sk" path="res://assets/meadow.png" id="2_400sg"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://bxxmaprao7ef8" path="res://assets/terrain.png" id="8_400sg"]
 [ext_resource type="AudioStream" uid="uid://c8pbiv8xj6bkr" path="res://assets/Rimsky-Korsakov - Flight of the Bumblebee.mp3" id="9_g4kob"]
 [ext_resource type="PackedScene" uid="uid://bw437naqug2sj" path="res://scenes/Flower.tscn" id="9_vmqsw"]
+[ext_resource type="Texture2D" uid="uid://bu6cxjb3cia0u" path="res://scenes/hedges.png" id="11_2rd6h"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qc1es"]
 radius = 29.0
@@ -592,7 +593,14 @@ position = Vector2(-128, -331)
 wait_time = 20.0
 one_shot = true
 
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+z_index = 50
+position = Vector2(188.74994, -50.49997)
+scale = Vector2(0.9242787, 0.92427874)
+texture = ExtResource("11_2rd6h")
+
 [node name="Walls" type="TileMapLayer" parent="."]
+visible = false
 position = Vector2(3, 15)
 tile_map_data = PackedByteArray("AAAMAPn/rAAaAAEAAAAMAPr/rAAaAAEAAAAMAPj/rAATAAEAAAAMAPv/rAAaAAEAAAAMAPz/rAAaAAEAAAAMAP3/rAAaAAEAAAAMAP7/rAAaAAEAAAAMAP//rAAaAAEAAAAMAAAArAAaAAEAAAAMAAEArAAaAAEAAAAMAAIArAAaAAEAAAAMAAMArAAaAAEAAAAMAAQArAAZAAEAAAD5/wMArAAaAAEAAAD5/wIArAAaAAEAAAD5/wEArAAaAAEAAAD5/wAArAAaAAEAAAD5////rAAaAAEAAAD5//7/rAAaAAEAAAD5//3/rAAaAAEAAAD5//z/rAAaAAEAAAD5//v/rAAaAAEAAAD5//r/rAAaAAEAAAD5//n/rAAaAAEAAAD5//j/rAAPAAEAAAD6//j/rAAQAAEAAAD7//j/rAAQAAEAAAD8//j/rAAQAAEAAAD9//j/rAAQAAEAAAD+//j/rAAQAAEAAAD///j/rAAQAAEAAAAAAPj/rAAQAAEAAAABAPj/rAAQAAEAAAACAPj/rAAQAAEAAAADAPj/rAAQAAEAAAAEAPj/rAAQAAEAAAAFAPj/rAAQAAEAAAAGAPj/rAAQAAEAAAAHAPj/rAAQAAEAAAAIAPj/rAAQAAEAAAAJAPj/rAAQAAEAAAAKAPj/rAAQAAEAAAALAPj/rAAQAAEAAAALAAAArAATAAEAAAAKAAAArAAQAAEAAAAJAAAArAAQAAEAAAAIAAAArAAQAAEAAAAHAAAArAAQAAEAAAAGAAAArAAPAAEAAAD6//z/rAAPAAEAAAD7//z/rAAQAAEAAAD8//z/rAAQAAEAAAD9//z/rAAQAAEAAAD+//z/rAAQAAEAAAD///z/rAATAAEAAAAEAPn/rAAbAAEAAAAEAPr/rAAaAAEAAAAEAPv/rAAaAAEAAAAEAPz/rAAaAAEAAAAEAP3/rAAZAAEAAAAFAP3/rAAPAAEAAAAGAP3/rAAQAAEAAAAHAP3/rAATAAEAAAAIAP3/rAAZAAEAAAAIAPz/rAAaAAEAAAAIAPv/rAAbAAEAAAD+/wIArAAaAAEAAAD+/wMArAAZAAEAAAD+/wEArAAbAAEAAAD5/wUArAAPAAEAAAD6/wUArAAQAAEAAAD7/wUArAAQAAEAAAD8/wUArAAQAAEAAAD9/wUArAAQAAEAAAD+/wUArAAQAAEAAAD//wUArAAQAAEAAAAAAAUArAAQAAEAAAABAAUArAAQAAEAAAACAAUArAAQAAEAAAADAAUArAAQAAEAAAAEAAUArAAQAAEAAAAFAAUArAAQAAEAAAAGAAUArAAQAAEAAAAHAAUArAAQAAEAAAAIAAUArAAQAAEAAAAJAAUArAAQAAEAAAAKAAUArAAQAAEAAAALAAUArAAQAAEAAAAMAAUArAATAAEAAAD5/wQArAAZAAEAAAAGAAEArAAbAAEAAAAGAAIArAAZAAEAAAAJAAQArAAbAAEAAAA=")
 tile_set = SubResource("TileSet_qy1jj")
